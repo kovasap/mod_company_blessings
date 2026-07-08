@@ -72,6 +72,12 @@ this.town_temple_dialog_module <- this.inherit("scripts/ui/screens/ui_module", {
 		};
 	}
 
+	function onRecieveBlessing( _data )
+	{
+	  local blessingID = _data[0];
+		this.World.Assets.CurrentBlessingID = blessingID
+	}
+
 	function onTreatInjury( _data )
 	{
 		local entityID = _data[0];
